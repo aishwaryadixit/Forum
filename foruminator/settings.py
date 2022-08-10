@@ -79,7 +79,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "OPTIONS": {
             "service": "foiegras",
-            "passfile": environ["HOME"] + "/.pgpass",
+            "passfile": Path(environ["HOME"]) / ".pgpass",
         },
     }
 }
